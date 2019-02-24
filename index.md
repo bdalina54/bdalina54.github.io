@@ -13,6 +13,7 @@ Hi! I am an experience full-stack web developer, I work with websites and inform
     <li>Cascading Stylesheet Css3 (Bootstrap Css, Font-Awesome)</li>
     <li>Javascript (Vanilla Javascript, Native XMLHttpRequest, Little JS Prototyping)</li>
     <li>Javascript Frameworks( Jquery Library, Datatables, Ui.js, Inputmask )</li>
+    <li>Search Engine Optimization, Google Analytics, Google Search Console</li>
 </ul>
 
 <b>Back-End</b>
