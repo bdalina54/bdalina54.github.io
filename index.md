@@ -27,11 +27,14 @@ Hi! I am an experience full-stack web developer, I work with websites and inform
     <li>Text File as Flat Data, in JSON Format</li>
 </ul>
 
-Markdown files.
 
-### Markdown
+### Development Tools ( Open Source Software )
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<ul>
+    <li>IDE ( Notepad++ [favorite], Atom [for GitHub], Netbeans) Other Free and Premium IDEs (PhpStorm, Sublime, Brackets, VisualStudio)</li>
+    <li>Xampp Server, MySql Workbench</li>
+    <li>GitHUb DeskTop, Git Terminal, Composer, WinSCP</li>
+</ul>
 
 ```markdown
 Syntax highlighted code block
