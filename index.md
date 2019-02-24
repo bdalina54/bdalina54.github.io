@@ -1,4 +1,4 @@
-## <div class="text-center">Welcome to My GitHub Pages</div>
+<h1 class="text-center">Welcome to My GitHub Pages</h1>
 
 
 ## About Me
