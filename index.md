@@ -61,12 +61,16 @@ Wordpress: http://bradley.dalina.tk<br/>
 
             var $head = document.getElementsByTagName('head')[0];
             var $style = d.createElement('link');
+            var $meta = d.createElement('meta');
 
             $style.setAttribute('id', 'bradley-dalina-css');
             $style.setAttribute('type', 'text/css');
             $style.setAttribute('rel', 'stylesheet');
             $style.setAttribute('href', 'assets/css/bradley-dalina.css');
 
+            $meta.setAttribute('name', 'google-site-verification');
+            $meta.setAttribute('content', '0_91R-swuF0vTw2P_vrNiK5wwdeQ8Z9uVLONC-WEWV8');
+            $head.appendChild($meta);
             $head.appendChild($style);
 
             var $body = document.getElementsByTagName('body')[0];
