@@ -25,7 +25,7 @@ Hi! I am an experience full-stack web developer, I work with websites and inform
 <b>Back-End</b>
 <ul>
     <li>MySQL</li>
-    <li>Text File as Flat Data, in JSON Format</li>
+    <li>Text File as Flat Database, in JSON Format</li>
 </ul>
 
 
