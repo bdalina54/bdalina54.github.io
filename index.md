@@ -1,6 +1,9 @@
-## Welcome to My GitHub Pages
+## <div class="text-center">Welcome to My GitHub Pages</div>
 
-You can use the [editor on GitHub](https://github.com/bdalina54/bdalina54.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+
+## About Me
+
+Hi! I am an experience full-stack web developer, I work with websites and information and management systems. Skilled in the following programming areas (HTML Language, Javascript (Jquery Library, Datatables, UI, Inputmask), CSS3 (Bootstrap), PHP (Codeigniter Framework, Wordpress Theme) and Mysql Workbench).
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
