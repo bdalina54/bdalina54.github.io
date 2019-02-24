@@ -1,9 +1,7 @@
-<style rel="stylesheet" stype="text/css">
-        .project-name:before{content:'Bradley B. Dalina');
-        .project-tagline:before{content:'Project Compilation');
-</style>
-## Welcome to My GitHub Pages
+<div class="text-center">## Welcome to My GitHub Pages</div>
 
+
+## About Me
 You can use the [editor on GitHub](https://github.com/bdalina54/bdalina54.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
@@ -41,10 +39,24 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 <script language="javascript" type="text/javascript">
-    window.onload = function() 
+    (function(w, d)
     {
-        /* Logic here */
-        document.getElementsByClassName('project-name')[0].innerHTML='Bradley B. Dalina';
-        document.getElementsByClassName('project-tagline')[0].innerHTML='Project Compilation';
-    }
+            'use_strict';
+
+            /* Logic here */
+
+            document.getElementsByClassName('project-name')[0].innerHTML='Bradley B. Dalina';
+            document.getElementsByClassName('project-tagline')[0].innerHTML='Project Compilation';
+
+            var $head = document.getElementsByTagName('head')[0].appendChild();
+            var $style = d.createElement('style');
+            var $csstextnode = d.createTextNode(".text-center{text-align:center;}");  
+
+            $style.setAttribute('id', 'bradley-dalina-css');
+            $style.setAttribute('type', 'text/css');
+            $style.setAttribute('rel', 'stylesheet');
+
+            $style.appendChild($csstextnode);
+            $head.appendChild($style);
+    })(window, document);
 </script>
