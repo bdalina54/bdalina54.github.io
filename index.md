@@ -1,3 +1,7 @@
+<style rel="stylesheet" stype="text/css">
+        .project-name:before{content:'Bradley B. Dalina');
+        .project-tagline:before{content:'Project Compilation');
+</style>
 ## Welcome to My GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/bdalina54/bdalina54.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
@@ -40,8 +44,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
     window.onload = function() 
     {
         /* Logic here */
-        document.getElementsByClassName('project-name')[0].innerHtml='Bradley B. Dalina';
-        document.getElementsByClassName('project-tagline')[0].innerHtml='Project Compilation';
+        document.getElementsByClassName('project-name')[0].innerHTML='Bradley B. Dalina';
+        document.getElementsByClassName('project-tagline')[0].innerHTML='Project Compilation';
     }
-
 </script>
