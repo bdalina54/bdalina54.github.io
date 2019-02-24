@@ -3,9 +3,31 @@
 
 ## About Me
 
-Hi! I am an experience full-stack web developer, I work with websites and information and management systems. Skilled in the following programming areas (HTML Language, Javascript (Jquery Library, Datatables, UI, Inputmask), CSS3 (Bootstrap), PHP (Codeigniter Framework, Wordpress Theme) and Mysql Workbench).
+Hi! I am an experience full-stack web developer, I work with websites and information and management systems. I am currently residing @ Pasay, City Philippines.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ Skilled in the following areas
+
+<b>Font-End</b>
+<ul>
+    <li>HTML5 Language</li>
+    <li>Cascading Stylesheet Css3 (Bootstrap Css, Font-Awesome)</li>
+    <li>Javascript (Vanilla Javascript, Native XMLHttpRequest, Little JS Prototyping)</li>
+    <li>Javascript Frameworks( Jquery Library, Datatables, Ui.js, Inputmask )</li>
+</ul>
+
+<b>Back-End</b>
+<ul>
+    <li>PHP Core, PDO</li>
+    <li>Php Frameworks (Codeigiter, Wordpress Template Creation, Little w/ Joomla)</li>
+</ul>
+
+<b>Back-End</b>
+<ul>
+    <li>MySQL</li>
+    <li>Text File as Flat Data, in JSON Format</li>
+</ul>
+
+Markdown files.
 
 ### Markdown
 
