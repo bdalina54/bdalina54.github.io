@@ -27,39 +27,29 @@ Hi! I am an experience full-stack web developer, I work with websites and inform
     <li>Text File as Flat Data, in JSON Format</li>
 </ul>
 
-Markdown files.
 
-### Markdown
+### Development Tools ( Open Source Software )
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<ul>
+    <li>IDE ( Notepad++ [favorite], Atom [for GitHub], Netbeans) Other Free and Premium IDEs (PhpStorm, Sublime, Brackets, VisualStudio)</li>
+    <li>Xampp Server, MySql Workbench</li>
+    <li>GitHUb DeskTop, Git Terminal, Composer, WinSCP( For FTP Connection with Live hosting)</li>
+</ul>
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### Online Testing Tools
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bdalina54/bdalina54.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<a href ="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbdalina54.github.io%2F">Developers.google.com/speed/pagespeed/insights</a>
+<a href ="https://tools.keycdn.com/curl">Tools.keycdn.com</a>
+<a href ="https://securityheaders.com/?q=https%3A%2F%2Fwww.bradley-dalina.tk&followRedirects=on">Securityheaders.co</a>
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Email: <a href="mailto: bdalina54@gmail.com">Bdalina54@gmail.com</a><br/>
+Mobile: +639264482952<br/>
+Official Website: https://www.bradley-dalina.tk<br/>
+Wordpress: http://bradley.dalina.tk<br/>
 
 <script language="javascript" type="text/javascript">
     (function(w, d)
