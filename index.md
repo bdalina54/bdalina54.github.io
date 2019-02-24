@@ -49,7 +49,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
             document.getElementsByClassName('project-name')[0].innerHTML='Bradley B. Dalina';
             document.getElementsByClassName('project-tagline')[0].innerHTML='Project Compilation';
 
-            var $head = document.getElementsByTagName('head')[0].appendChild();
+            var $head = document.getElementsByTagName('head')[0];
             var $style = d.createElement('style');
             var $csstextnode = d.createTextNode(".text-center{text-align:center;}");  
 
