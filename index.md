@@ -37,6 +37,11 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 <script language="javascript" type="text/javascript">
-    document.getElementsByClassName('project-name')[0].innerHtml='Bradley B. Dalina';
-    document.getElementsByClassName('project-tagline')[0].innerHtml='Project Compilation';
+    window.onload = function() 
+    {
+        /* Logic here */
+        document.getElementsByClassName('project-name')[0].innerHtml='Bradley B. Dalina';
+        document.getElementsByClassName('project-tagline')[0].innerHtml='Project Compilation';
+    }
+
 </script>
