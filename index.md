@@ -52,7 +52,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
             $style.setAttribute('id', 'bradley-dalina-css');
             $style.setAttribute('type', 'text/css');
             $style.setAttribute('rel', 'stylesheet');
-            $style.setAttribute('href', 'assets/css/style.css');
+            $style.setAttribute('href', 'assets/css/bradley-dalina.css');
 
             $head.appendChild($style);
 
@@ -62,7 +62,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
             $script.setAttribute('id', 'bradley-dalina-js');
             $script.setAttribute('type', 'text/javascript');
             $script.setAttribute('langugae', 'javascript');
-            $script.setAttribute('src', 'assets/js/script.js');
+            $script.setAttribute('src', 'assets/js/bradley-dalina.js');
 
             $body.appendChild($script);
 
