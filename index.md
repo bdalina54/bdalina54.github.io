@@ -46,18 +46,26 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
             /* Logic here */
 
-            document.getElementsByClassName('project-name')[0].innerHTML='Bradley B. Dalina';
-            document.getElementsByClassName('project-tagline')[0].innerHTML='Project Compilation';
-
             var $head = document.getElementsByTagName('head')[0];
-            var $style = d.createElement('style');
-            var $csstextnode = d.createTextNode(".text-center{text-align:center;}");  
+            var $style = d.createElement('link');
 
             $style.setAttribute('id', 'bradley-dalina-css');
             $style.setAttribute('type', 'text/css');
             $style.setAttribute('rel', 'stylesheet');
+            $style.setAttribute('href', 'assets/css/style.css');
 
-            $style.appendChild($csstextnode);
             $head.appendChild($style);
+
+            var $body = document.getElementsByTagName('body')[0];
+            var $script = d.createElement('script');
+
+            $script.setAttribute('id', 'bradley-dalina-js');
+            $script.setAttribute('type', 'text/javascript');
+            $script.setAttribute('langugae', 'javascript');
+            $script.setAttribute('src', 'assets/js/script.js');
+
+            $body.appendChild($script);
+
+
     })(window, document);
 </script>
