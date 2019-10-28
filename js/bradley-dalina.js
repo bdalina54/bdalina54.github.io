@@ -1,7 +1,6 @@
 (function (w,d)
 {
-    'use_strict';
-
+    //'use_strict';
     function init() {
         // quit if this function has already been called
         if (arguments.callee.done) return;
@@ -10,7 +9,7 @@
 
         setTimeout(function(){d.body.classList.add('loaded'); d.querySelector('html').removeAttribute('style'); }, 3000);
 
-        //setTimeout(function(){
+        setTimeout(function(){
             var fbroot = d.getElementById("fb-root");
             var fbscript =  d.createElement("script");
                             fbscript.setAttribute("language","javascript");
@@ -33,12 +32,10 @@
                                                     "fjs.parentNode.insertBefore(js, fjs);"+
                                                 "}(document, 'script', 'facebook-jssdk'));";
                             fbroot.appendChild(fbscript);
-        //}, 10000);
-
+        }, 10000);
 
         d.getElementById('font-awesome-css').setAttribute('rel', 'stylesheet');
         d.getElementById('bradley-dalina-css').setAttribute('rel', 'stylesheet');
-
     }
     if (d.addEventListener) {
         d.addEventListener("DOMContentLoaded", init, false);
