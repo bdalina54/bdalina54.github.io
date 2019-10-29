@@ -32,7 +32,7 @@
                                                     "fjs.parentNode.insertBefore(js, fjs);"+
                                                 "}(document, 'script', 'facebook-jssdk'));";
                             fbroot.appendChild(fbscript);
-        }, 10000);
+        }, 25000);
 
         d.getElementById('font-awesome-css').setAttribute('rel', 'stylesheet');
         d.getElementById('bradley-dalina-css').setAttribute('rel', 'stylesheet');
