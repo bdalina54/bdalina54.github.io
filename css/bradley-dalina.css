@@ -1,7 +1,161 @@
-*{outline:0;}
+/* *{outline:solid 1px #ff0000;} */
 html{
     font-family: sans-serif;
+    margin:0;
+    padding:0;
 }
 body{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin:0;
+    padding:0;
+    font-size: 18px;
+}
+h1.lead-h1 {
+    font-size: 300%;
+    font-weight: 500;
+    margin: 0;
+    line-height: normal;
+    text-transform: uppercase;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.20);
+}
+p.lead-p {
+    text-shadow: 0 2px 2px rgba(0,0,0,0.20);
+    line-height: 32px;
+}
+.container{
+    display:flex;
+    width:100%;
+    max-width:1170px;
+    margin:0 auto;
+    padding:0 60px;
+    align-items: center;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+.transparent {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+nav#navbar{
+    display:block;
+    width:100%;
+    box-shadow:0 0 5px 0 rgba(0,0,0,0.20);
+    font-size: 14px;
+}
+#navbar .container{
+    min-height:60px;
+    padding:5px 60px;
+    justify-content: space-between;
+}
+#navbar .container a{
+    text-decoration:none;
+    color:#222;
+}
+
+.site-contact a{
+    border-left: solid 1px rgba(0,0,0,.07);
+    margin-left: 15px;
+    padding-left: 15px;
+}
+.site-title::after{
+    content:"Bradley B. Dalina";
+    text-transform:uppercase;
+    font-weight:bold;
+}
+.site-email::after{
+    content:"bdalina54@gmail.com";
+}
+.site-number::after{
+    content:"+639264482952";
+}
+
+
+
+
+header#header {
+    position:relative;
+    min-height: 430px;
+    color:#fff;
+    background: rgb(255,165,0);
+    background: -moz-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
+    background: -webkit-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
+    background: radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa500",endColorstr="#f17300",GradientType=1);
+}
+#header .profile {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+#header .profile  .photo {
+    margin: 0 15px;
+}
+#header .profile  .intro {
+    margin: 0 15px;
+}
+
+
+#header .profile img {
+    border-radius: 50%;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    width:100%;
+    height:100%;
+}
+
+#header .profile a figure {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 50%;
+    margin: 0;
+    border: solid 5px #fff;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.10);
+}
+
+#header .profile a figure:focus img, #header .profile a figure:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#header .profile a figure:focus figcaption, #header .profile a figure:hover figcaption {
+    opacity: 1;
+    color: #fff;
+}
+
+#header .profile a figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10,10,10,.34);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header .profile a figure figcaption .caption-content i {
+    font-size: 35px;
+}
+#header .profile a figure figcaption .caption-content p {
+    margin-bottom: 0;
+    font-weight: 400;
 }
