@@ -13,7 +13,7 @@ body{
 section{
     position:relative;
     display: block;
-    min-height:430px;
+    height:auto;
 }
 h1.lead-h1 {
     font-size: 300%;
@@ -28,17 +28,6 @@ p.lead-p {
     line-height: 32px;
 }
 
-h2 {
-    text-transform: uppercase;
-    color: #888;
-    font-size: 30px;
-    font-weight: normal;
-    border-bottom: solid 1px #ddd;
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-}
 h3 {
     color: #807d7d;
     font-weight: 450;
@@ -57,11 +46,7 @@ h3 {
 .transparent {
     height: 100%;
     width: 100%;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+    position: relative;
 }
 
 nav#navbar{
@@ -106,6 +91,8 @@ header#header {
     position:relative;
     min-height: 430px;
     color:#fff;
+    display: flex;
+    align-items: center;
     background: rgb(255,165,0);
     background: -moz-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
     background: -webkit-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
@@ -188,9 +175,34 @@ header#header {
 }
 
 
-section#working-experience{}
+section#working-experience{
+    background-image:url(../images/emma-matthews-558684-unsplash.jpg);
+    background-size:cover;
+}
+section#working-experience .transparent{
+    background-color:rgba(255,255,255,0.99);
+}
+section#working-experience h2 {
+    text-transform: uppercase;
+    color: #888;
+    font-size: 30px;
+    font-weight: normal;
+    border-bottom: solid 1px #ddd;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position:relative;
+}
+i.show-all.fa.fa-chevron-up {
+    font-size: 16px;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
 .timeline {
-    margin: 60px 0 60px 120px;
+    margin: 60px 0 0px 120px;
 }
 
 .row {
@@ -203,11 +215,15 @@ section#working-experience{}
     width: 30px;
     height: 30px;
     position: absolute;
-    background: #ddd;
+    background: rgb(238,238,238);
+    background: -moz-radial-gradient(circle, rgba(238,238,238,1) 22%, rgba(221,221,221,1) 81%);
+    background: -webkit-radial-gradient(circle, rgba(238,238,238,1) 22%, rgba(221,221,221,1) 81%);
+    background: radial-gradient(circle, rgba(238,238,238,1) 22%, rgba(221,221,221,1) 81%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#dddddd",GradientType=1);
     padding: 5px;
     left: -90px;
     border-radius: 55%;
-    box-shadow: 0 0 5px 1px rgba(0,0,0,0.20);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.20);
     border: solid 10px #fff;
     z-index: 2;
 }
@@ -237,4 +253,17 @@ section#working-experience{}
 }
 .row h3{
     margin-top: 0;
+}
+
+section#skills .transparent{background-color: #ddd;}
+section#skills h2 {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 30px;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position:relative;
 }
