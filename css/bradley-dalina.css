@@ -10,6 +10,11 @@ body{
     padding:0;
     font-size: 18px;
 }
+section{
+    position:relative;
+    display: block;
+    min-height:430px;
+}
 h1.lead-h1 {
     font-size: 300%;
     font-weight: 500;
@@ -22,13 +27,28 @@ p.lead-p {
     text-shadow: 0 2px 2px rgba(0,0,0,0.20);
     line-height: 32px;
 }
+
+h2 {
+    text-transform: uppercase;
+    color: #888;
+    font-size: 30px;
+    font-weight: normal;
+    border-bottom: solid 1px #ddd;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+h3 {
+    color: #807d7d;
+    font-weight: 450;
+    margin-bottom: 5px;
+}
 .container{
-    display:flex;
     width:100%;
     max-width:1170px;
     margin:0 auto;
-    padding:0 60px;
-    align-items: center;
+    padding:60px;
 }
 .flex{
     display:flex;
@@ -54,6 +74,8 @@ nav#navbar{
     min-height:60px;
     padding:5px 60px;
     justify-content: space-between;
+    align-items: center;
+    display:flex;
 }
 #navbar .container a{
     text-decoration:none;
@@ -89,6 +111,11 @@ header#header {
     background: -webkit-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
     background: radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa500",endColorstr="#f17300",GradientType=1);
+}
+
+#header .container{
+    align-items: center;
+    display:flex;
 }
 #header .profile {
     display: flex;
@@ -158,4 +185,56 @@ header#header {
 #header .profile a figure figcaption .caption-content p {
     margin-bottom: 0;
     font-weight: 400;
+}
+
+
+section#working-experience{}
+.timeline {
+    margin: 60px 0 60px 120px;
+}
+
+.row {
+    padding-bottom: 30px;
+    position: relative;
+}
+.row::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #ddd;
+    padding: 5px;
+    left: -90px;
+    border-radius: 55%;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.20);
+    border: solid 10px #fff;
+    z-index: 2;
+}
+.row::after {
+    content: "";
+    display: block;
+    border-left: solid 1px #ddd;
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    margin-right: 30px;
+    background: #ddd;
+    left: -60px;
+    top: 0;
+    bottom:0;
+}
+.row:last-child::after {
+    display:none;
+    content:"";
+    border-left: 0
+    height:0;
+    width: 0;
+    position: unset;
+    margin-right: 0;
+    background:0;
+    left:0;
+}
+.row h3{
+    margin-top: 0;
 }
