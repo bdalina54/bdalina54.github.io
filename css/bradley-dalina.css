@@ -26,6 +26,7 @@ h1.lead-h1 {
 p.lead-p {
     text-shadow: 0 2px 2px rgba(0,0,0,0.20);
     line-height: 32px;
+    font-size:20px;
 }
 
 h3 {
@@ -176,8 +177,9 @@ header#header {
 
 
 section#working-experience{
-    background-image:url(../images/emma-matthews-558684-unsplash.jpg);
+    background-image:url(../images/emma-matthews-558684-unsplash.webp);
     background-size:cover;
+    background-attachment:fixed;
 }
 section#working-experience .transparent{
     background-color:rgba(255,255,255,0.99);
