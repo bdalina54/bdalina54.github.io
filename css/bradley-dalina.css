@@ -34,6 +34,11 @@ h3 {
     font-weight: 450;
     margin-bottom: 5px;
 }
+li {
+    line-height: 32px;
+    color: #252525;
+    list-style-type: circle;
+}
 .container{
     width:100%;
     max-width:1170px;
@@ -90,17 +95,32 @@ nav#navbar{
 
 header#header {
     position:relative;
-    min-height: 430px;
+    color:#fff;
+    background-image:url(../images/emma-matthews-558684-unsplash.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header#header .transparent{
+    position:relative;
+    min-height: 470px;
     color:#fff;
     display: flex;
     align-items: center;
     background: rgb(255,165,0);
-    background: -moz-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
-    background: -webkit-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
-    background: radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241,115,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa500",endColorstr="#f17300",GradientType=1);
+    background: -moz-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241, 115, 0, 0.97) 100%);
+    background: -webkit-radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241, 115, 0, 0.97) 100%);
+    background: radial-gradient(circle at left, rgba(255,165,0,1) 0%, rgba(241, 115, 0, 0.97) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa500",endColorstr="#f17300f7",GradientType=1);
 }
-
+header#header::after {
+    content: "";
+    height: 2px;
+    background: #fffefd;
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+}
 #header .container{
     align-items: center;
     display:flex;
@@ -176,15 +196,15 @@ header#header {
 }
 
 
-section#working-experience{
-    background-image:url(../images/full-size.webp);
-    background-size:auto 80%;
+section#working-experience {
+    background-image: url(../images/architecture-black-and-white-buildings-1437493.jpg);
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-attachment:;
-    background-position:bottom right;
+    background-position: bottom right;
+    position: relative;
 }
 section#working-experience .transparent{
-    background-color:rgba(255,255,255,0.95);
+    background-color:rgba(255,255,255,0.94);
 }
 section#working-experience h2 {
     text-transform: uppercase;
@@ -259,10 +279,23 @@ i.show-all.fa.fa-chevron-up {
     margin-top: 0;
 }
 
-section#skills .transparent{background-color: #ddd;}
+section#skills{
+    background-image: url(../images/emma-matthews-558684-unsplash.webp);
+    background-size: cover;
+    position: relative;
+    border-bottom:solid 1px #ddd;
+}
+
+section#skills .transparent{
+    background: rgb(242,242,242);
+    background: -moz-linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66,0.95) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66,0.95) 100%);
+    background: linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66, 0.90) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d3242",endColorstr="#2d3242e6",GradientType=1);
+}
 section#skills h2 {
     text-transform: uppercase;
-    color: #222;
+    color: #fff;
     font-size: 30px;
     font-weight: normal;
     display: block;
@@ -270,4 +303,24 @@ section#skills h2 {
     margin-bottom: 15px;
     padding-bottom: 15px;
     position:relative;
+}
+
+
+section#skills ul{
+   margin-left: 90px;
+}
+section#skills ul li{
+    color:#fff;
+}
+
+
+footer#footer .container{
+    padding:40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer#footer a{
+    text-decoration: none;
+    color:#222;
 }
