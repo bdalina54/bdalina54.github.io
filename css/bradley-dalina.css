@@ -125,10 +125,10 @@ header#header .transparent{
     min-height: 470px;
     color:#fff;
     display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+    display: -webkit-flex;
+    display: flex;
     align-items: center;
-    background: rgb(242,242,242);
+    background-color: rgb(242,242,242);
     background: -moz-linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66,0.95) 100%);
     background: -webkit-linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66,0.95) 100%);
     background: linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66, 0.90) 100%);
@@ -153,7 +153,6 @@ header#header::after {
     align-items: center;
     margin: 0 -15px;
 }
-
 #header .profile  .photo {
     margin: 0 15px;
 }
@@ -498,7 +497,7 @@ i.show-all.fa.fa-chevron-up {
     width: 30px;
     height: 30px;
     position: absolute;
-    background: rgb(238,238,238);
+    background-color: rgb(238,238,238);
     background: -moz-radial-gradient(circle, rgba(238,238,238,1) 22%, rgba(221,221,221,1) 81%);
     background: -webkit-radial-gradient(circle, rgba(238,238,238,1) 22%, rgba(221,221,221,1) 81%);
     background: radial-gradient(circle, rgba(238,238,238,1) 22%, rgba(221,221,221,1) 81%);
@@ -555,7 +554,7 @@ section#contact::after {
     bottom: 3px;
 }
 section#contact .transparent{
-    background: rgb(242,242,242);
+    background-color: rgb(242,242,242);
     background: -moz-linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66,0.95) 100%);
     background: -webkit-linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66,0.95) 100%);
     background: linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66, 0.90) 100%);
