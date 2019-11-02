@@ -54,8 +54,18 @@ p.lead-p {
     padding:60px;
 }
 .flex{
-    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    /* Center vertically */
     align-items: center;
+
+    /*Center horizontaly */
+    justify-content: center;
+    /*Center horizontaly ie */
+    -ms-flex-pack: center;
+    -ms-flex-align:center;
 }
 .transparent {
     height: 100%;
@@ -113,7 +123,9 @@ header#header .transparent{
     position:relative;
     min-height: 470px;
     color:#fff;
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     align-items: center;
     background: rgb(242,242,242);
     background: -moz-linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66,0.95) 100%);
@@ -134,7 +146,9 @@ header#header::after {
     display:flex;
 }
 #header .profile {
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     align-items: center;
     margin: 0 -15px;
 }
@@ -185,9 +199,15 @@ header#header::after {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     color: #fff;
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     align-items: center;
-    justify-content: center;
+    /*Center horizontaly */
+  justify-content: center;
+  /*Center horizontaly ie */
+  -ms-flex-pack: center;
+  -ms-flex-align:center;
 }
 #header .profile a figure figcaption .caption-content i {
     font-size: 35px;
@@ -277,7 +297,9 @@ section#services::after {
 section#services .transparent{
     background-color:#f1f1f1;
     min-height:550px;
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     align-items: center;
 }
 section#services .container{
@@ -297,10 +319,16 @@ section#services .container a.services-list{
     width:calc(100% / 3 - 15px);
     border:solid 1px #ddd;
     flex: 1;
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    /*Center horizontaly */
+  justify-content: center;
+  /*Center horizontaly ie */
+  -ms-flex-pack: center;
+  -ms-flex-align:center;
     transition:all linear .2s;
     position:relative;
     color: #252525;
@@ -315,9 +343,15 @@ section#services .container .services-list:hover .feature-icon{
     box-shadow: 1px 0 10px rgba(0,0,0,.6);
 }
 section#services .feature-icon {
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     align-items: center;
-    justify-content: center;
+    /*Center horizontaly */
+  justify-content: center;
+  /*Center horizontaly ie */
+  -ms-flex-pack: center;
+  -ms-flex-align:center;
     position: absolute;
     top: -60px;
     padding: 20px;
@@ -384,19 +418,31 @@ section#social::after {
     z-index: 2;
 }
 .social-links {
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     align-items: center;
-    justify-content: center;
+    /*Center horizontaly */
+  justify-content: center;
+  /*Center horizontaly ie */
+  -ms-flex-pack: center;
+  -ms-flex-align:center;
     margin: 25px;
 }
 .social-links a {
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     padding: 8px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     align-items: center;
-    justify-content: center;
+    /*Center horizontaly */
+  justify-content: center;
+  /*Center horizontaly ie */
+  -ms-flex-pack: center;
+  -ms-flex-align:center;
     text-decoration: none;
     color: #fff;
     background-color: #2d3242;
@@ -537,7 +583,9 @@ section#contact ul li{
     width: 65%;
 }
 section#skills .form-body {
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     flex-direction: column;
 }
 .form-input {
@@ -550,7 +598,9 @@ section#skills .form-body {
 /* @Footer Section */
 footer#footer .container{
     padding:40px 60px;
-    display: flex;
+    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     align-items: center;
     justify-content: space-between;
 }
