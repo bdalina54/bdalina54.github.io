@@ -1,14 +1,6 @@
 (function (w,d)
 {
     //'use_strict';
-
-    Modernizr.on('webp', function (result) {
-        if (result) {
-          // supported
-        } else {
-          // not-supported
-        }
-    });
     document.documentElement.classList.remove("no-js");
     function init() {
         // quit if this function has already been called
