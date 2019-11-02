@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow:hidden;">
+<html lang="en" style="overflow:hidden;" class="no-js">
     <head title="Bradley-B-Dalina">
         <title title="Bradley-B-Dalina">
             Bradley B. Dalina
@@ -9,7 +9,7 @@
 		var galite = galite || {};
 		galite.UA = 'UA-51807488-1'; // Insert your tracking code here
 		</script>
-
+        <script src="js/modernizr-custom.js"></script>
         <!--[if IE]><link id="css_open-sans" rel="stylesheet" href="fonts/open-sans.css" as="style" type="text/css" defer media="all"><![endif]-->
         <link id="css_open-sans" href="fonts/open-sans.css" rel="style" type="text/css" defer media="all">
 
@@ -113,7 +113,11 @@
     					<div class="photo">
     						<a href="images/full-size.webp" title="Bradley B. Dalina">
     							<figure>
-    								<img itemprop="contentURL" src="images/bradley-dalina.webp" alt="Bradley B. Dalina" title="Bradley B. Dalina">
+                                    <picture>
+                                          <source srcset="images/bradley-dalina.webp" type="image/webp">
+                                          <source srcset="images/bradley-dalina.jpg" type="image/jpeg">
+                                          <img alt="Bradley B. Dalina" title="Bradley B. Dalina" itemprop="contentURL" alt="This is my face" src="images/bradley-dalina.jpg">
+                                    </picture>
     								<figcaption>
     									<div class="caption-content">
         									<i class="fa fa-search"></i><br>
@@ -177,6 +181,28 @@
                 </div>
             </div>
         </section>
+        <section id="portfolio">
+            <div class="transparent">
+        		<div class="container">
+                    <h2>Porfolio</h2>
+                    <p class="center-text">Here are some of my work samples</p>
+                </div>
+            </div>
+        </section>
+        <section id="social">
+            <div class="transparent">
+        		<div class="container">
+                    <h2>Conect With Me</h2>
+                    <div class="social-links">
+                        <a target="_blank" title="Facebook" href="https://www.facebook.com/dal.bra"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" title="Twitter" href="https://www.twitter.com/bradleydalina"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/bradley-dalina-7966a1124/"><i class="fa fa-linkedin"></i></a>
+                        <a target="_blank" title="Github" href="https://bdalina54.github.io"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-rss"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="working-experience">
             <div class="transparent">
         		<div class="container">
@@ -218,39 +244,17 @@
                 </div>
             </div>
         </section>
-        <section id="porfolio">
-            <div class="transparent">
-        		<div class="container">
-                    <h2>Porfolio</h2>
-                    <ul>
-                        <li>Static Website</li>
-                        <li>Wordpress Template</li>
-                        <li>Wordpress Plugin</li>
-                        <li>Javascript</li>
-                        <li>System</li>
-                        <li>VIew More...</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- <section id="contact">
+        <section id="contact">
             <div class="transparent">
         		<div class="container">
                     <h2>Contact Me</h2>
-                    <form onsubmit="return sendEmail();">
-                        <div class="form-body">
-                            <input type="text" class="form-input" id="conspose-name" placeholder="Name" required />
-                            <input type="email" class="form-input" id="conspose-email" placeholder="Email" required />
-                            <input type="text" class="form-input" id="compose-subject" placeholder="Subject" required />
-                            <textarea class="form-input" id="compose-message" placeholder="Message" rows="5" required></textarea>
-                        </div>
-                        <div class="form-footer">
-                          <button type="submit" id="send-button" class="btn btn-primary">Send</button>
-                        </div>
-                  </form>
+                    <p>Should you need any of my services for your website? I’d love to help you out with this!
+                        I also offer free advise and consultation regarding website development, you can ask me about web development tools for a better site performance. You can also visit my social media profiles for more informations.</p>Please feel free to contact me thru my email or messenger chat box. Thank you!</p>
+                    <br/>
+                     <button>Send Message</button>
                 </div>
             </div>
-        </section> -->
+        </section>
         <footer id="footer">
             <div class="container">
                 <span>Copyright © 2019 <a href="/" title="Bradley B. Dalina">Bradley B. Dalina</a></span><span>Hosted By: <a href="https://github.com">Github</a></span>

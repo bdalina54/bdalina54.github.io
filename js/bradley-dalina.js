@@ -1,6 +1,15 @@
 (function (w,d)
 {
     //'use_strict';
+
+    Modernizr.on('webp', function (result) {
+        if (result) {
+          // supported
+        } else {
+          // not-supported
+        }
+    });
+    document.documentElement.classList.remove("no-js");
     function init() {
         // quit if this function has already been called
         if (arguments.callee.done) return;
@@ -46,4 +55,4 @@
       document.write('<link id="font-awesome-css" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" defer media="all">');
       document.write('<link id="bradley-dalina-css" rel="stylesheet" href="/css/bradley-dalina.css" as="style" type="text/css" defer media="all">');
     /*@end @*/
-})(window, document);    
+})(window, document);
