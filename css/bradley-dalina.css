@@ -234,7 +234,8 @@ section#skills h2{
     margin-bottom: 5px;
 }
 section#skills ul{
-   margin-left: 90px;
+    padding-top:15px;
+    margin-left: 90px;
 }
 
 section#skills .container{

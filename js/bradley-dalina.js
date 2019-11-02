@@ -1,7 +1,26 @@
 (function (w,d)
 {
     //'use_strict';
-    document.documentElement.classList.remove("no-js");
+    d.documentElement.classList.remove("no-js");
+    var site_email = d.querySelector('.site-email');
+    var site_number = d.querySelector('.site-number');
+    if(site_email){
+        site_email.addEventListener("mouseover", function(){
+            this.setAttribute("href","mailto: bdalina54@gmail.com");
+        }, false);
+        site_email.addEventListener("mouseout", function(){
+            this.setAttribute("href","");
+        }, false);
+    }
+    if(site_number){
+        site_number.addEventListener("mouseover", function(){
+            this.setAttribute("href","tel: 639264482952");
+        }, false);
+        site_number.addEventListener("mouseout", function(){
+            this.setAttribute("href","");
+        }, false);
+    }
+
     function init() {
         // quit if this function has already been called
         if (arguments.callee.done) return;
