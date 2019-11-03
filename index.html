@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow:hidden;" class="no-js" manifest="demo.appcache">
+<html lang="en" class="no-js" manifest="demo.appcache"><!--style="overflow:hidden;"-->
     <head title="Bradley-B-Dalina">
         <title title="Bradley-B-Dalina">
             Bradley B. Dalina
@@ -101,7 +101,7 @@
         		<div class="container">
     				<div class="profile">
     					<div class="photo">
-    						<a href="images/full-size.webp" title="Bradley B. Dalina">
+    						<a class="view-image" href="full-size" title="Bradley B. Dalina">
     							<figure>
                                     <picture>
                                           <source srcset="images/bradley-dalina.webp" type="image/webp">
@@ -196,11 +196,11 @@
         <section id="working-experience">
             <div class="transparent">
         		<div class="container">
-                    <h2>Work Experience<i class="show-all fa fa-chevron-up"></i></h2>
+                    <h2>Work Experience<i id="expander" class="show-all fa fa-chevron-up"></i></h2>
                     <div class="timeline">
                         <div class="row">
-                            <h3>Wordpress Developer - Surefire Local</h3>
-                            <small>April 2019 - Present</small>
+                            <h3 class="slide-ul">Wordpress Developer - Surefire Local</h3>
+                            <small>April 2019 - Present <a href="surefire-local-ph" class="view-image">Click to view photo</a></small>
                             <ul>
                                 <li>Design Integration - Convert PSD Design to Wordpress Template</li>
                                 <li>Implementation of Website Optimization Instructions</li>
@@ -209,8 +209,8 @@
                             </ul>
                         </div>
                         <div class="row">
-                            <h3>Senior Systm Engineer IV - Afield Consulting Inc.</h3>
-                            <small>Sept 2016 - Jul 2018, Jan 2019 - March 2019</small>
+                            <h3 class="slide-ul">Senior System Engineer IV - Afield Consulting Inc.</h3>
+                            <small>Sept 2016 - Jul 2018, Jan 2019 - March 2019 <a href="afield-consulting-inc" class="view-image">Click to view photo</a></small>
                             <ul>
                                 <li>System Cycle Conceptualization</li>
                                 <li>Design and develop applications based on the clients requirements</li>
@@ -218,11 +218,10 @@
                                 <li>Diagnose and address application issues raised by the clients during and after system deployment</li>
                                 <li>Document technical deliverable's during application development such as database design, workflow design and other reports as needed</li>
                             </ul>
-
                         </div>
                         <div class="row">
-                            <h3>Casual Information Technology Specialist - Local Government Unit of Maydolong</h3>
-                            <small>April 2012 - April 2015</small>
+                            <h3 class="slide-ul">Casual Information Technology Specialist - Local Government Unit of Maydolong</h3>
+                            <small>April 2012 - April 2015 <a href="lgu-maydolong" class="view-image">Click to view photo</a></small>
                             <ul>
                                 <li>Network Administrator</li>
                                 <li>Municipal Website Administrator</li>
@@ -250,7 +249,18 @@
                 <span>Copyright © 2019 <a href="/" title="Bradley B. Dalina">Bradley B. Dalina</a></span><span>Hosted By: <a href="https://github.com">Github</a></span>
             </div>
         </footer>
-
+        <div id="image-viewer">
+            <div class="image-wrapper">
+                <figure>
+                    <picture><source srcset="" type="image/webp"><source srcset="" type="image/jpeg"><img alt="" title="" itemprop="contentURL" src=""></picture>
+                    <figcaption>
+                        <div class="caption-content">
+                            <p>Sample Caption</p><a href="javascript:void(0);" id="close-viewer"><small>[ Close ]</small></a>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
         <!-- Your customer chat code -->

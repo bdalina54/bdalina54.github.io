@@ -478,7 +478,7 @@ section#working-experience h2 {
     padding-bottom: 15px;
     position:relative;
 }
-i.show-all.fa.fa-chevron-up {
+i.show-all.fa.fa-chevron-up, i.hide-all.fa.fa-chevron-down {
     font-size: 16px;
     padding: 15px;
     position: absolute;
@@ -536,6 +536,35 @@ i.show-all.fa.fa-chevron-up {
 }
 .row h3{
     margin-top: 0;
+    margin-bottom:15px;
+    cursor: pointer;
+}
+
+.hide{
+    overflow: hidden;
+    opacity:0;
+    transition:all 1s ease-out;
+}
+.show{
+    overflow: hidden;
+    transition:all 1s ease-in;
+    opacity:1;
+}
+section#working-experience a.view-image {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 6px 15px;
+    border-radius: 15px;
+    color: #2d3242;
+    background-color: #f1f1f1;
+    transition:all linear .5s;
+}
+a.view-image:hover{
+    background-color:#e2e2e2;
+    transition:all linear .5s;
 }
 
 /* @Contact Section */
@@ -602,12 +631,51 @@ section#skills .form-body {
 footer#footer .container{
     padding:40px 60px;
     display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+    display: -webkit-flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 footer#footer a{
     text-decoration: none;
     color:#222;
+}
+
+
+div#image-viewer {
+    justify-content: center;
+    display: none; /*flex;*/
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:transparent;
+    transition:background-color ease-in-out 3s;
+}
+div#image-viewer.active{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+div#image-viewer picture {
+    border: solid 1px rgba(0,0,0,0.60);
+    display: block;
+    box-shadow: 0 0 0 5px #ffffff;
+}
+
+div#image-viewer .caption-content {
+    color: #f1f1f1;
+    display:flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+div#image-viewer .caption-content #close-viewer{
+    text-decoration: none;
+    color:#f1f1f1;
 }
