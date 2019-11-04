@@ -9,16 +9,15 @@
 		var galite = galite || {};
 		galite.UA = 'UA-51807488-1'; // Insert your tracking code here
 		</script>
-        <script src="js/modernizr-custom.js"></script>
         <!--[if IE]><link id="css_open-sans" rel="stylesheet" href="fonts/open-sans.css" as="style" type="text/css" defer media="all"><![endif]-->
         <link id="css_open-sans" href="fonts/open-sans.css" rel="style" type="text/css" defer media="all">
 
         <!--[if IE]><link id="css_fontawesome" rel="stylesheet" href="fonts/font-awesome.min.css" as="style" type="text/css" defer media="all"><![endif]-->
-        <link id="font-awesome-css" rel="preload" href="fonts/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" media="all">
+        <link id="font-awesome-css" rel="preload" href="fonts/font-awesome.min.css" as="style" type="text/css" onload="this.rel='stylesheet'" defer onerror="this.rel='stylesheet'" media="all">
         <noscript><link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css" defer media="all"></noscript>
 
         <!--[if IE]><link id="css_styles" rel="stylesheet" href="/css/bradley-dalina.css" as="style" type="text/css" defer media="all"><![endif]-->
-        <link id="bradley-dalina-css" rel="preload" href="css/bradley-dalina.css" as="style" type="text/css" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'" media="all">
+        <link id="bradley-dalina-css" rel="preload" href="css/bradley-dalina.css" as="style" type="text/css" onload="this.rel='stylesheet'" defer onerror="this.rel='stylesheet'" media="all">
 		<noscript><link rel="stylesheet" href="css/bradley-dalina.css" type="text/css" media="all"></noscript>
         <meta http-equiv="pragma" content="public" />
         <meta charset="UTF-8" content="text/html">
@@ -272,6 +271,7 @@
         logged_out_greeting="Hi!">
         </div>
         <!-- attribution=install_email -->
-        <script rel="nofollow" src="js/bradley-dalina.js" type="text/javascript" language="javascript"></script>
+        <script src="js/modernizr-custom.js" defer></script>
+        <script rel="nofollow" src="js/bradley-dalina.js" type="text/javascript" defer language="javascript"></script>
     </body>
 </html>
