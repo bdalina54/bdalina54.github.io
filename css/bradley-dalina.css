@@ -245,8 +245,8 @@ section#skills::before {
     position: absolute;
     content: '';
     width: 50.1%;
-    height: 90px;
-    bottom: -45px;
+    height: 100px;
+    bottom: -50px;
     left: 0px;
     transform: skewY(6deg);
     background-color: #fff;
@@ -257,8 +257,8 @@ section#skills::after {
     position: absolute;
     content: '';
     width: 50.1%;
-    height: 90px;
-    bottom: -45px;
+    height: 100px;
+    bottom: -50px;
     right: 0px;
     transform: skewY(-6deg);
     background-color: #fff;
@@ -274,8 +274,8 @@ section#services::before {
     position: absolute;
     content: '';
     width: 50.1%;
-    height: 90px;
-    bottom: -45px;
+    height: 100px;
+    bottom: -50px;
     left: 0px;
     transform: skewY(6deg);
     background-color: #f1f1f1;
@@ -287,8 +287,8 @@ section#services::after {
     position: absolute;
     content: '';
     width: 50.1%;
-    height: 90px;
-    bottom: -45px;
+    height: 100px;
+    bottom: -50px;
     right: 0px;
     transform: skewY(-6deg);
     background-color: #f1f1f1;
