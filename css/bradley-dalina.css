@@ -437,22 +437,6 @@ i.show-all.fa.fa-chevron-up, i.hide-all.fa.fa-chevron-down {
     transition:all 1s ease-in;
     opacity:1;
 }
-section#working-experience a.view-image {
-    margin-left: 15px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 6px 15px;
-    border-radius: 15px;
-    color: #2d3242;
-    background-color: #f1f1f1;
-    transition:all linear .5s;
-}
-a.view-image:hover{
-    background-color:#e2e2e2;
-    transition:all linear .5s;
-}
 
 /* @Contact Section */
 .webp section#contact{background-image: url(../images/emma-matthews-558684-unsplash.webp);}

@@ -31,7 +31,7 @@
                 let jpg_src = "images/"+this.getAttribute("href")+".jpg";
                 let pictureObj = imageViewer.querySelector("picture");
                 let imageCaption = imageViewer.querySelector(".caption-content > p");
-                imageCaption.innerHTML = this.getAttribute("href").replace(/-/gim, " ");
+                imageCaption.innerHTML = this.getAttribute("image-data").replace(/-/gim, " ");
                 let closeViewer = d.getElementById('close-viewer');
                 if(closeViewer){
                     closeViewer.addEventListener("click", function(){
