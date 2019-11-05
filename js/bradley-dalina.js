@@ -27,8 +27,8 @@
         for(let i =0; i < viewImage.length; i++){
             viewImage[i].addEventListener("click", function(e){
                 e.preventDefault();
-                let webp_src = "images/"+this.getAttribute("href")+".webp";
-                let jpg_src = "images/"+this.getAttribute("href")+".jpg";
+                let webp_src = "images/"+this.getAttribute("image-data")+".webp";
+                let jpg_src = "images/"+this.getAttribute("image-data")+".jpg";
                 let pictureObj = imageViewer.querySelector("picture");
                 let imageCaption = imageViewer.querySelector(".caption-content > p");
                 imageCaption.innerHTML = this.getAttribute("image-data").replace(/-/gim, " ");
