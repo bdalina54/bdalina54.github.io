@@ -538,7 +538,7 @@ div#image-viewer .caption-content #close-viewer{
     text-align: center;
     padding: 60px 15px 15px 15px;
     margin: 50px auto;
-    width: 100%;
+    width: auto;
     flex-direction: column;}
     section#services .container {
     padding-top: 160px;
