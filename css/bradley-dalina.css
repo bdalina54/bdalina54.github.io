@@ -85,16 +85,16 @@ button {
     padding-right:60px;
     padding-left:60px;
 }
-.h30{
+.v30{
     padding-top:30px;
     padding-bottom:30px;
 }
-.v30{
+.h30{
     padding-right:30px;
     padding-left:30px;
 }
-.t30{
-    padding-top:30px;
+.tm30{
+    margin-top:30px;
 }
 .v90{
     padding-top:90px;
@@ -144,10 +144,6 @@ nav#navbar{
     width:100%;
     box-shadow:0 0 5px 0 rgba(0,0,0,0.20);
     font-size: 14px;
-}
-#navbar .container{
-    padding-top:30px;
-    padding-bottom:30px;
 }
 .site-contact a{
     border-left: solid 1px rgba(0,0,0,.07);
@@ -236,17 +232,7 @@ header#header .transparent{
     font-weight: 400;
 }
 
-/* @Skills Section */
-section#skills ul{
-    padding-top:15px;
-    margin-left: 90px;
-    margin-top:15px;
-}
-section#skills .container{
-    padding-bottom: 10px;
-    z-index:5;
-}
-section#skills::before {
+.angle-before::before{
     position: absolute;
     content: '';
     width: 50.1%;
@@ -254,11 +240,9 @@ section#skills::before {
     bottom: -50px;
     left: 0px;
     transform: skewY(6deg);
-    background-color: #fff;
     z-index: 2;
-    border-bottom: solid 1px #c5c5c5;
 }
-section#skills::after {
+.angle-after::after{
     position: absolute;
     content: '';
     width: 50.1%;
@@ -266,43 +250,39 @@ section#skills::after {
     bottom: -50px;
     right: 0px;
     transform: skewY(-6deg);
-    background-color: #fff;
     z-index: 2;
+}
+/* @Skills Section */
+section#skills ul{
+    margin-left: 90px;
+}
+section#skills .container{
+    padding-bottom: 30px;
+    z-index:5;
+}
+section#skills::before {
+    background-color: #fff;
+    border-bottom: solid 1px #c5c5c5;
+}
+section#skills::after {
+    background-color: #fff;
     border-bottom: solid 1px #c5c5c5;
 }
 
 /* @Services Section */
 section#services::before {
-    position: absolute;
-    content: '';
-    width: 50.1%;
-    height: 100px;
-    bottom: -50px;
-    left: 0px;
-    transform: skewY(6deg);
     background-color: #f1f1f1;
-    z-index: 2;
     border-bottom: solid 1px #c5c5c5;
 }
 section#services::after {
-    position: absolute;
-    content: '';
-    width: 50.1%;
-    height: 100px;
-    bottom: -50px;
-    right: 0px;
-    transform: skewY(-6deg);
     background-color: #f1f1f1;
-    z-index: 2;
     border-bottom: solid 1px #c5c5c5;
 }
 section#services .transparent{
     background-color:#f1f1f1;
-    min-height:550px;
 }
 section#services .container{
-    padding-top:150px;
-    padding-bottom:0px;
+    padding-top: 220px;
     z-index:5;
 }
 section#services .container .services-wrap{
@@ -348,7 +328,7 @@ section#services .feature-icon {
 
 /* @Portfolio Section */
 section#portfolio .container{
-    padding-top:150px;
+    padding-top:200px;
 }
 section#social .transparent{
     background: #f1f1f1;
@@ -431,6 +411,7 @@ i.show-all.fa.fa-chevron-up, i.hide-all.fa.fa-chevron-down {
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.20);
     border: solid 10px #fff;
     z-index: 2;
+    top:-10px;
 }
 .row::after {
     content: "";
@@ -455,16 +436,6 @@ i.show-all.fa.fa-chevron-up, i.hide-all.fa.fa-chevron-down {
     margin-right: 0;
     background:0;
     left:0;
-}
-.hide{
-    overflow: hidden;
-    opacity:0;
-    transition:all 1s ease-out;
-}
-.show{
-    overflow: hidden;
-    transition:all 1s ease-in;
-    opacity:1;
 }
 
 /* @Contact Section */
@@ -494,10 +465,6 @@ section#skills .form-body {
     outline:0;
 } */
 /* @Footer Section */
-footer#footer .container{
-    padding-top:30px;
-    padding-bottom:30px;
-}
 
 div#image-viewer {
     justify-content: center;
@@ -536,38 +503,25 @@ div#image-viewer .caption-content #close-viewer{
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1375px){
-    body{
-        font-size:14px;
-    }
+    body{font-size:14px;}
     h1{font-size:40px;}
     h3{font-size:20px;}
-    .container{
-        max-width:900px;
-    }
-    .min450{min-height:380px;}
-    nav#navbar, footer#footer{font-size:12px;}
-    nav#navbar .container, footer#footer .container {
-        padding: 25px 60px;
-    }
-    #header p{
-        font-size:15px;
-    }
-    #header .profile a figure{height:200px; width:200px;}
-    .after-line::after,
-    section#social::before, section#social::after{height:1px;}
 
+    nav#navbar, footer#footer{font-size:12px;}
+    #header p{font-size:15px;}
+    #header .profile a figure{height:200px; width:200px;}
     section#skills::before,section#skills::after, section#services::before, section#services::after  {
     bottom: -40px;
     }
+    section#services .container{padding-top:190px;}
+    section#services .feature-icon{top: -50px; padding: 15px;}
+    section#portfolio .container{padding-top:180px;}
 
-    section#services .transparent{min-height:450px;}
-    section#services .container{padding-top:120px;}
+    .container{max-width:900px;}
+    .min450{min-height:380px;}
+    .v30{padding-top:25px; padding-bottom:25px;}
 
-    section#services .feature-icon{top: -50px;
-    padding: 15px;}
-    section#portfolio .container{padding-top:130px;}
-
-    .row::before {top:-10px;}
+    .after-line::after,section#social::before, section#social::after{height:1px;}
 
 }
 @media only screen and (min-width: 1024px){ ... }
