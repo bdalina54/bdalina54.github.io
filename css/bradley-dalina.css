@@ -517,7 +517,7 @@ div#image-viewer .caption-content #close-viewer{
     section#services .feature-icon{top: -50px; padding: 15px;}
     section#portfolio .container{padding-top:180px;}
 
-    .container{max-width:900px;}
+    .container{max-width:900px;width:auto;}
     .min450{min-height:380px;}
     .v30{padding-top:25px; padding-bottom:25px;}
 
@@ -525,7 +525,41 @@ div#image-viewer .caption-content #close-viewer{
 
 }
 @media only screen and (min-width: 1024px){ ... }
-@media only screen and (max-width: 1023px){ ... }
+@media only screen and (max-width: 1023px){
+    .container{max-width:unset;width:auto;}
+    section#services .container .services-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    }
+    section#services .container a.services-list {
+    text-align: center;
+    padding: 60px 15px 15px 15px;
+    margin: 50px auto;
+    width: 100%;
+    flex-direction: column;}
+    section#services .container {
+    padding-top: 160px;
+    z-index: 5;
+    }
+    section#services .v60 {padding-bottom:0;}
+}
+@media only screen and (max-width: 991px){
+    #header .profile {flex-direction: column;}
+    #header .profile .photo, #header .profile .intro {
+    text-align: center;
+    margin-top: 30px;
+    }
+    h1 {font-size: 40px;}
+    #header p { font-size: 16px; }
+    section#skills ul {margin-left: 30px;}
+}
+@media only screen and (max-width: 768px){
+    .site-email::after {content: ""; }
+    .site-number::after {content: "";}
+}
 @media only screen and (min-width: 992px) and (max-width: 1023px){ ... }
 @media only screen and (min-width: 768px) and (max-width: 991px){ ... }
 @media only screen and (min-width: 480px) and (max-width: 767px){ ... }
