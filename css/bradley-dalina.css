@@ -618,13 +618,7 @@ div#image-viewer .caption-content #close-viewer{
 }
 
 @media only screen and (max-width: 479px){
-    .vh96{
-        padding-left:15px;
-        padding-right:15px;
-        padding-top:30px;padding-bottom:30px;
-    }
-    .h60{padding-left:15px;padding-right:15px;}
-    .v60{padding-top:30px;padding-bottom:30px;}
+    p, li{line-height:28px;}
     #header p {margin-bottom:0;}
 }
 
