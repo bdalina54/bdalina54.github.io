@@ -109,6 +109,17 @@
         var FontFamily= d.createTextNode("font-family: 'Open Sans', sans-serif;");
         OpenSans.appendChild(FontFamily);
         d.head.appendChild(OpenSans);
+
+        // make a stylesheet link
+        var FontAwesome = document.createElement( "link" );
+        FontAwesome.rel = "stylesheet";
+        FontAwesome.href = "css/font-awesome.min.css";
+        FontAwesome.setAttribute("id","css_fontawesome");
+        FontAwesome.setAttribute("media","all");
+        FontAwesome.type = "text/css";
+        // insert it at the end of the head in a legacy-friendly manner
+        document.head.insertBefore( FontAwesome, d.getElementById("css_opensans").nextSibling ); //d.head.childNodes[ document.head.childNodes.length - 1 ]
+
         d.getElementById('font-awesome-css').setAttribute('rel', 'stylesheet');
         d.getElementById('bradley-dalina-css').setAttribute('rel', 'stylesheet');
     }
@@ -119,7 +130,7 @@
     /*@cc_on @*/
     /*@if (@_win32)
       document.write('<link id="font-awesome-css" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" async onload="this.media='all'">');
-      document.write('<link id="css_open-sans" rel="stylesheet" href="fonts/open-sans.css" as="style" type="text/css" async onload="this.media='all'">');
+      document.write('<link id="css_opensans" rel="stylesheet" href="fonts/open-sans.css" as="style" type="text/css" async onload="this.media='all'">');
       document.write('<link id="bradley-dalina-css" rel="stylesheet" href="/css/bradley-dalina.css" as="style" type="text/css" async onload="this.media='all'">');
     /*@end @*/
 })(window, document);
