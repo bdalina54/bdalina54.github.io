@@ -113,7 +113,7 @@
         // make a stylesheet link
         var FontAwesome = document.createElement( "link" );
         FontAwesome.rel = "preload";
-        FontAwesome.href = "css/font-awesome.min.css";
+        FontAwesome.href = "fonts/font-awesome.min.css";
         FontAwesome.setAttribute("id","css_fontawesome");
         FontAwesome.setAttribute("media","all");
         FontAwesome.setAttribute("as","style");
