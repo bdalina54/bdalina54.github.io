@@ -106,7 +106,7 @@
         var OpenSans =  d.createElement("style");
         OpenSans.setAttribute("rel","stylesheet");
         OpenSans.type = "text/css";
-        var FontFamily= d.createTextNode("font-family: 'Open Sans', sans-serif;");
+        var FontFamily= d.createTextNode("font-family: 'Open Sans', arial, helvetica, sans-serif;");
         OpenSans.appendChild(FontFamily);
         d.head.appendChild(OpenSans);
 
