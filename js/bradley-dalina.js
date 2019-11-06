@@ -103,12 +103,12 @@
                             fbroot.appendChild(fbscript);
         }, 10000);
 
-        var OpenSans =  d.createElement("style");
-        OpenSans.setAttribute("rel","stylesheet");
-        OpenSans.type = "text/css";
-        var FontFamily= d.createTextNode("font-family: 'Open Sans', arial, helvetica, sans-serif;");
-        OpenSans.appendChild(FontFamily);
-        d.head.appendChild(OpenSans);
+        //var OpenSans =  d.createElement("style");
+        //OpenSans.setAttribute("rel","stylesheet");
+        //OpenSans.type = "text/css";
+        //var FontFamily= d.createTextNode("font-family: 'Open Sans', arial, helvetica, sans-serif;");
+        //OpenSans.appendChild(FontFamily);
+        //d.head.appendChild(OpenSans);
 
         // make a stylesheet link
         var FontAwesome = document.createElement( "link" );
@@ -120,7 +120,6 @@
         // insert it at the end of the head in a legacy-friendly manner
         document.head.insertBefore( FontAwesome, d.getElementById("css_opensans").nextSibling ); //d.head.childNodes[ document.head.childNodes.length - 1 ]
 
-        d.getElementById('font-awesome-css').setAttribute('rel', 'stylesheet');
         d.getElementById('bradley-dalina-css').setAttribute('rel', 'stylesheet');
     }
     if (d.addEventListener) {
