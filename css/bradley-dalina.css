@@ -620,6 +620,7 @@ div#image-viewer .caption-content #close-viewer{
 @media only screen and (max-width: 479px){
     p, li{line-height:28px;}
     #header p {margin-bottom:0;}
+    .v30{padding-top:20px; padding-bottom:20px;}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px){ ... }
