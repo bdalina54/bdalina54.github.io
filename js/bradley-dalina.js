@@ -118,7 +118,7 @@
     w.onload = init;
     /*@cc_on @*/
     /*@if (@_win32)
-      document.write('<link id="font-awesome-css" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" defer onload="this.media='all'">');
+      document.write('<link id="font-awesome-css" rel="stylesheet" href="assets/css/font-awesome.min.css" as="style" type="text/css" async onload="this.media='all'">');
       document.write('<link id="css_open-sans" rel="stylesheet" href="fonts/open-sans.css" as="style" type="text/css" async onload="this.media='all'">');
       document.write('<link id="bradley-dalina-css" rel="stylesheet" href="/css/bradley-dalina.css" as="style" type="text/css" defer onload="this.media='all'">');
     /*@end @*/
