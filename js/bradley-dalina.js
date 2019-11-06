@@ -116,6 +116,7 @@
         FontAwesome.href = "css/font-awesome.min.css";
         FontAwesome.setAttribute("id","css_fontawesome");
         FontAwesome.setAttribute("media","all");
+        FontAwesome.setAttribute("as","stylesheet");
         FontAwesome.type = "text/css";
         // insert it at the end of the head in a legacy-friendly manner
         document.head.insertBefore( FontAwesome, d.getElementById("css_opensans").nextSibling ); //d.head.childNodes[ document.head.childNodes.length - 1 ]
