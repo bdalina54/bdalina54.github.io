@@ -103,6 +103,12 @@
                             fbroot.appendChild(fbscript);
         }, 10000);
 
+        var OpenSans =  d.createElement("style");
+        OpenSans.setAttribute("rel","stylesheet");
+        OpenSans.type = "text/css";
+        var FontFamily= d.createTextNode("font-family: 'Open Sans', sans-serif;");
+        OpenSans.appendChild(FontFamily);
+        d.head.appendChild(OpenSans);
         d.getElementById('font-awesome-css').setAttribute('rel', 'stylesheet');
         d.getElementById('bradley-dalina-css').setAttribute('rel', 'stylesheet');
     }

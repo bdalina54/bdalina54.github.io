@@ -1,12 +1,11 @@
 /* *{outline:solid 1px #ff0000;} */
 *{background-size:cover;}
 html{
-    font-family: sans-serif;
+    font-family:'arial', sans-serif;
     margin:0;
     padding:0;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
     margin:0;
     padding:0;
     font-size: 16px;
