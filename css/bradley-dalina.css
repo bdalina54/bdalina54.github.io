@@ -40,7 +40,7 @@ h2 {
 }
 h3{
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: normal;
     display: block;
     margin-bottom: 5px;
@@ -501,11 +501,18 @@ div#image-viewer .caption-content #close-viewer{
     text-decoration: none;
     color:#f1f1f1;
 }
+@media only screen and (max-width: 1375px){
+    body{font-size:14px;}
+    .vh96{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+}
 
 @media only screen and (min-width: 1024px) and (max-width: 1375px){
-    body{font-size:14px;}
+
     h1{font-size:40px;}
-    h3{font-size:20px;}
+    h3{font-size:18px;}
 
     nav#navbar, footer#footer{font-size:12px;}
     #header p{font-size:15px;}
@@ -520,6 +527,7 @@ div#image-viewer .caption-content #close-viewer{
     .container{max-width:900px;width:auto;}
     .min450{min-height:380px;}
     .v30{padding-top:25px; padding-bottom:25px;}
+
 
     .after-line::after,section#social::before, section#social::after{height:1px;}
 
@@ -546,21 +554,78 @@ div#image-viewer .caption-content #close-viewer{
     }
     section#services .v60 {padding-bottom:0;}
 }
+@media only screen and (min-width: 992px) and (max-width: 1023px){ ... }
 @media only screen and (max-width: 991px){
     #header .profile {flex-direction: column;}
-    #header .profile .photo, #header .profile .intro {
+    #header .profile .photo{text-align: center;}
+    #header .profile .intro {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     }
     h1 {font-size: 40px;}
+    h2{font-size:28px;}
     #header p { font-size: 16px; }
     section#skills ul {margin-left: 30px;}
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ ... }
 @media only screen and (max-width: 768px){
+    h1 {font-size: 35px;}
+    h2 {font-size: 25px; padding-bottom: 0;}
     .site-email::after {content: ""; }
     .site-number::after {content: "";}
+    .vh96{
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .h60{padding-left:30px;padding-right:30px;}
+    .row::before {
+        content: "";
+        display: none;
+    }
+    .row::after {
+        content: "";
+        display: none;
+    }
+    .timeline {
+        margin: 30px 0 0px 0px;
+    }
+    .row {
+    padding-bottom: 0;
+    position: relative;
+    border-bottom: dashed 1px #ddd;
+    margin-bottom: 25px;
+    }
+    .row:last-child{
+        margin-bottom: 0px;
+        border-bottom: 0;
+    }
+    .row ul {
+    margin-bottom: 25px;
+    }
+    section#skills ul {
+    margin-left: 0px;
+    }
+
 }
-@media only screen and (min-width: 992px) and (max-width: 1023px){ ... }
-@media only screen and (min-width: 768px) and (max-width: 991px){ ... }
 @media only screen and (min-width: 480px) and (max-width: 767px){ ... }
+@media only screen and (max-width: 480px){
+    #footer .flex{flex-direction:column;}
+    #footer .flex span:first-child {margin-bottom: 15px;}
+    #header .profile a figure{height:180px; width:180px;}
+    h1 {font-size: 30px;}
+    h2, h3 {font-size: 20px; padding-bottom: 0;}
+}
+
+@media only screen and (max-width: 479px){
+    .vh96{
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:30px;padding-bottom:30px;
+    }
+    .h60{padding-left:15px;padding-right:15px;}
+    .v60{padding-top:30px;padding-bottom:30px;}
+    #header p {margin-bottom:0;}
+}
+
 @media only screen and (min-width: 320px) and (max-width: 479px){ ... }
