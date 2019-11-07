@@ -162,8 +162,6 @@ nav#navbar{
 }
 
 /* @Header Section */
-.webp header#header{background-image:url(../images/emma-matthews-558684-unsplash.webp);}
-.no-webp header#header{background-image:url(../images/emma-matthews-558684-unsplash.jpg);}
 header#header {
     background-attachment: fixed;
     position: relative;
@@ -366,8 +364,6 @@ section#social::after {
 }
 
 /* @Working Experience Section */
-.webp section#working-experience{background-image: url(../images/architecture-black-and-white-buildings-1437493.webp);}
-.no-webp section#working-experience{background-image: url(../images/architecture-black-and-white-buildings-1437493.jpg);}
 section#working-experience {
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -438,8 +434,6 @@ i.show-all.fa.fa-chevron-up, i.hide-all.fa.fa-chevron-down {
 }
 
 /* @Contact Section */
-.webp section#contact{background-image: url(../images/emma-matthews-558684-unsplash.webp);}
-.no-webp section#contact{background-image: url(../images/emma-matthews-558684-unsplash.jpg);}
 section#contact .transparent{
     background-color: rgb(45, 50, 66);
     background: -moz-linear-gradient(90deg, rgb(45, 50, 66) 56%, rgba(45, 50, 66,0.95) 100%);

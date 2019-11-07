@@ -21,55 +21,6 @@
         }, false);
     }
 
-    var viewImage = d.getElementsByClassName("view-image");
-    var imageViewer = d.getElementById("image-viewer");
-    if(viewImage){
-        for(let i =0; i < viewImage.length; i++){
-            viewImage[i].addEventListener("click", function(e){
-                e.preventDefault();
-                let webp_src = "images/"+this.getAttribute("image-data")+".webp";
-                let jpg_src = "images/"+this.getAttribute("image-data")+".jpg";
-                let pictureObj = imageViewer.querySelector("picture");
-                let imageCaption = imageViewer.querySelector(".caption-content > p");
-                imageCaption.innerHTML = this.getAttribute("image-data").replace(/-/gim, " ");
-                let closeViewer = d.getElementById('close-viewer');
-                if(closeViewer){
-                    closeViewer.addEventListener("click", function(){
-                        imageViewer.style.display="none";
-                        imageViewer.style.backgroundColor="transparent";
-                        imageViewer.classList.remove("active");
-
-                        pictureObj.childNodes[0].setAttribute("srcset", "");
-                        pictureObj.childNodes[1].setAttribute("srcset", "");
-                        pictureObj.childNodes[2].setAttribute("src", "");
-                        imageCaption.innerHTML="";
-                    });
-                }
-
-                if(imageViewer){
-                    imageViewer.addEventListener("click", function(e){
-                        if(e.target == this){
-                            imageViewer.style.display="none";
-                            imageViewer.style.backgroundColor="transparent";
-                            imageViewer.classList.remove("active");
-
-                            pictureObj.childNodes[0].setAttribute("srcset", "");
-                            pictureObj.childNodes[1].setAttribute("srcset", "");
-                            pictureObj.childNodes[2].setAttribute("src", "");
-                            imageCaption.innerHTML="";
-                        }
-                    });
-                    imageViewer.classList.add("active");
-                    imageViewer.style.display="flex";
-                    imageViewer.style.backgroundColor="rgba(0,0,0,0.80)";
-                    pictureObj.childNodes[0].setAttribute("srcset", webp_src);
-                    pictureObj.childNodes[1].setAttribute("srcset", jpg_src);
-                    pictureObj.childNodes[2].setAttribute("src", jpg_src);
-                }
-            });
-        }
-    }
-
     function init() {
         // quit if this function has already been called
         if (arguments.callee.done) return;
@@ -81,34 +32,48 @@
         setTimeout(function(){
             var fbroot = d.getElementById("fb-root");
             var fbscript =  d.createElement("script");
-                            fbscript.setAttribute("language","javascript");
-                            fbscript.type = "text/javascript";
-                            fbscript.setAttribute("rel","nofollow");
-                            fbscript.setAttribute("defer","defer");
-                            fbscript.innerHTML = ""+
-                                                    "window.fbAsyncInit = function() {"+
-                                                      "FB.init({"+
-                                                        "xfbml            : true,"+
-                                                        "version          : 'v4.0'"+
-                                                    "});"+
-                                                "};"+
-                                                ""+
-                                                    "(function(d, s, id) {"+
-                                                    "var js, fjs = d.getElementsByTagName(s)[0];"+
-                                                    "if (d.getElementById(id)) return;"+
-                                                    "js = d.createElement(s); js.id = id;"+
-                                                    "js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';"+
-                                                    "fjs.parentNode.insertBefore(js, fjs);"+
-                                                "}(document, 'script', 'facebook-jssdk'));";
-                            fbroot.appendChild(fbscript);
-        }, 10000);
+                fbscript.setAttribute("language","javascript");
+                fbscript.type = "text/javascript";
+                fbscript.setAttribute("rel","nofollow");
+                fbscript.setAttribute("defer","defer");
+                fbscript.innerHTML = ""+
+                                        "window.fbAsyncInit = function() {"+
+                                          "FB.init({"+
+                                            "xfbml            : true,"+
+                                            "version          : 'v4.0'"+
+                                        "});"+
+                                    "};"+
+                                    ""+
+                                        "(function(d, s, id) {"+
+                                        "var js, fjs = d.getElementsByTagName(s)[0];"+
+                                        "if (d.getElementById(id)) return;"+
+                                        "js = d.createElement(s); js.id = id;"+
+                                        "js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';"+
+                                        "fjs.parentNode.insertBefore(js, fjs);"+
+                                    "}(document, 'script', 'facebook-jssdk'));";
+                fbroot.appendChild(fbscript);
+                
+                if(d.querySelector(".webp header#header")){
+                    d.querySelector(".webp header#header").style.backgroundImage="url(images/emma-matthews-558684-unsplash.webp)";
+                }
+                if(d.querySelector(".no-webp header#header")){
+                    d.querySelector(".no-webp header#header").style.backgroundImage="url(images/emma-matthews-558684-unsplash.jpg)";
+                }
+                if(d.querySelector(".webp section#working-experience")){
+                    d.querySelector(".webp section#working-experience").style.backgroundImage="url(images/architecture-black-and-white-buildings-1437493.webp)";
+                }
+                if(d.querySelector(".no-webp section#working-experience")){
+                    d.querySelector(".no-webp section#working-experience").style.backgroundImage="url(images/architecture-black-and-white-buildings-1437493.jpg)";
+                }
+                if(d.querySelector(".webp section#contact")){
+                    d.querySelector(".webp section#contact").style.backgroundImage="url(images/emma-matthews-558684-unsplash.webp)";
+                }
+                if(d.querySelector(".no-webp section#contact")){
+                    d.querySelector(".no-webp section#contact").style.backgroundImage="url(images/emma-matthews-558684-unsplash.jpg)";
+                }
 
-        //var OpenSans =  d.createElement("style");
-        //OpenSans.setAttribute("rel","stylesheet");
-        //OpenSans.type = "text/css";
-        //var FontFamily= d.createTextNode("font-family: 'Open Sans', arial, helvetica, sans-serif;");
-        //OpenSans.appendChild(FontFamily);
-        //d.head.appendChild(OpenSans);
+
+        }, 10000);
 
         // make a stylesheet link
         var FontAwesome = document.createElement( "link" );
