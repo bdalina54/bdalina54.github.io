@@ -349,10 +349,10 @@ section#social::after {
     z-index: 2;
 }
 .social-links a {
-    padding: 8px;
+    padding: 20px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 1px;
+    height: 1px;
     text-decoration: none;
     color: #fff;
     background-color: #2d3242;
