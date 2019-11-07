@@ -72,23 +72,19 @@
                     d.querySelector(".no-webp section#contact").style.backgroundImage="url(images/emma-matthews-558684-unsplash.jpg)";
                 }
 
+                // make a stylesheet link
+                var FontAwesome = document.createElement( "link" );
+                FontAwesome.rel = "stylesheet";
+                FontAwesome.href = "fonts/font-awesome.min.css";
+                FontAwesome.setAttribute("id","css_fontawesome");
+                FontAwesome.setAttribute("media","all");
+                FontAwesome.setAttribute("async","async");
+                FontAwesome.type = "text/css";
+                // insert it at the end of the head in a legacy-friendly manner
+                document.head.insertBefore( FontAwesome, d.getElementById("css_opensans").nextSibling ); //d.head.childNodes[ document.head.childNodes.length - 1 ]
 
         }, 10000);
 
-        // make a stylesheet link
-        var FontAwesome = document.createElement( "link" );
-        FontAwesome.rel = "preload";
-        FontAwesome.href = "fonts/font-awesome.min.css";
-        FontAwesome.setAttribute("id","css_fontawesome");
-        FontAwesome.setAttribute("media","all");
-        FontAwesome.setAttribute("as","style");
-        FontAwesome.setAttribute("async","async");
-        FontAwesome.setAttribute("onerror","this.rel='stylesheet'");
-        FontAwesome.setAttribute("media","nope!");
-        FontAwesome.setAttribute("onload","this.media='all'");
-        FontAwesome.type = "text/css";
-        // insert it at the end of the head in a legacy-friendly manner
-        document.head.insertBefore( FontAwesome, d.getElementById("css_opensans").nextSibling ); //d.head.childNodes[ document.head.childNodes.length - 1 ]
 
         d.getElementById('bradley-dalina-css').setAttribute('rel', 'stylesheet');
     }
