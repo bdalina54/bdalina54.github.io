@@ -83,6 +83,9 @@
         FontAwesome.setAttribute("media","all");
         FontAwesome.setAttribute("as","style");
         FontAwesome.setAttribute("async","async");
+        FontAwesome.setAttribute("onerror","this.rel='stylesheet'");
+        FontAwesome.setAttribute("media","nope!");
+        FontAwesome.setAttribute("onload","this.media='all'");
         FontAwesome.type = "text/css";
         // insert it at the end of the head in a legacy-friendly manner
         document.head.insertBefore( FontAwesome, d.getElementById("css_opensans").nextSibling ); //d.head.childNodes[ document.head.childNodes.length - 1 ]
