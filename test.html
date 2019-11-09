@@ -123,7 +123,18 @@
       }
 
     </script>
-
+    <div id="image-viewer">
+        <div class="image-wrapper">
+            <figure>
+                <picture><source type="image/webp"><source srcset="" type="image/jpeg"><img itemprop="contentURL"></picture>
+                <figcaption>
+                    <div class="caption-content">
+                        <p>Sample Caption</p><a href="javascript:void(0);" id="close-viewer"><small>[ Close ]</small></a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
